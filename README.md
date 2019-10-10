@@ -28,3 +28,5 @@
 
 		lab1: first commit
 	```
+
+1. З допомогою команди **git checkout -b second_branch** створив нову гілку і переключився на неї.
