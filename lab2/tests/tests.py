@@ -21,6 +21,11 @@ class TestClass(unittest.TestCase):
         with self.assertRaises(Exception):
             main(self.ip_url)
 
-    def test_home_work(self):
-        # Ваш захист
-        self.assertTrue(True)
+    def test_home_work_am(self):
+		self.assertTrue(home_work(self.am) == 0)
+		
+	def test_home_work_pm(self):
+		self.assertTrue(home_work(self.pm) == 0)
+		
+	def test_home_work_e(self):
+		self.assertTrue(home_work(self.e) == 1)
