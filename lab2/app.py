@@ -32,8 +32,16 @@ def main(url=''):
     return True
 
 
-def home_work():
-    # Ваш захист
+def home_work(m):
+    if "AM" in m:
+		print("Good AM")
+		return 0
+	else if "PM" in m:
+		print("Good PM")
+		return 0
+	else:
+		print("Not AM and not PM!")
+		return 1
     pass
 
 
