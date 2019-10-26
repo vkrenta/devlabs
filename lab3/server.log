@@ -1,0 +1,25 @@
+INFO 2019-10-26 14:41:02,565 root : Server available, server date: 2019-10-26 14:41:02
+INFO 2019-10-26 14:41:02,566 root : Monitoring page: : /health/
+INFO 2019-10-26 14:41:02,566 root : Server info: {'System': 'Windows', 'Release': '10', 'Type': 'AMD64'}
+INFO 2019-10-26 14:41:02,567 root : Client info: python-requests/2.22.0
+INFO 2019-10-26 14:42:02,593 root : Server available, server date: 2019-10-26 14:42:02
+INFO 2019-10-26 14:42:02,594 root : Monitoring page: : /health/
+INFO 2019-10-26 14:42:02,594 root : Server info: {'System': 'Windows', 'Release': '10', 'Type': 'AMD64'}
+INFO 2019-10-26 14:42:02,594 root : Client info: python-requests/2.22.0
+INFO 2019-10-26 14:43:02,728 root : Server available, server date: 2019-10-26 14:43:02
+INFO 2019-10-26 14:43:02,729 root : Monitoring page: : /health/
+INFO 2019-10-26 14:43:02,730 root : Server info: {'System': 'Windows', 'Release': '10', 'Type': 'AMD64'}
+INFO 2019-10-26 14:43:02,730 root : Client info: python-requests/2.22.0
+INFO 2019-10-26 14:44:02,791 root : Server available, server date: 2019-10-26 14:44:02
+INFO 2019-10-26 14:44:02,792 root : Monitoring page: : /health/
+INFO 2019-10-26 14:44:02,792 root : Server info: {'System': 'Windows', 'Release': '10', 'Type': 'AMD64'}
+INFO 2019-10-26 14:44:02,793 root : Client info: python-requests/2.22.0
+INFO 2019-10-26 14:45:02,860 root : Server available, server date: 2019-10-26 14:45:02
+INFO 2019-10-26 14:45:02,861 root : Monitoring page: : /health/
+INFO 2019-10-26 14:45:02,862 root : Server info: {'System': 'Windows', 'Release': '10', 'Type': 'AMD64'}
+INFO 2019-10-26 14:45:02,863 root : Client info: python-requests/2.22.0
+INFO 2019-10-26 14:46:02,942 root : Server available, server date: 2019-10-26 14:46:02
+INFO 2019-10-26 14:46:02,942 root : Monitoring page: : /health/
+INFO 2019-10-26 14:46:02,943 root : Server info: {'System': 'Windows', 'Release': '10', 'Type': 'AMD64'}
+INFO 2019-10-26 14:46:02,943 root : Client info: python-requests/2.22.0
+ERROR 2019-10-26 14:47:06,965 root : Exception: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018762B79348>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
