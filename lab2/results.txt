@@ -1,16 +1,16 @@
-============================= test session starts =============================
-platform win32 -- Python 3.7.5, pytest-5.2.1, py-1.8.0, pluggy-0.13.0
-rootdir: C:\Users\vkren\IdeaProjects\devlabs\lab2
+============================= test session starts ==============================
+platform linux -- Python 3.7.5, pytest-5.2.1, py-1.8.0, pluggy-0.13.0
+rootdir: /home/vasyl/devlabs/lab2
 collected 6 items
 
 tests.py ......                                                          [100%]
 
-============================== 6 passed in 1.18s ==============================
+============================== 6 passed in 0.92s ===============================
 ========================================
-Результат без параметрів:
+Результат без параметрів: 
 No URL passed to function
 ========================================
-Результат з правильною URL:
-Time is:  07:50:32 AM
-AM
+Результат з правильною URL: 
+Time is:  12:22:49 PM
+PM
 Date is:  10-25-2019
