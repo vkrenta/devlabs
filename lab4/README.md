@@ -22,11 +22,11 @@
     ```
    
    ![image](images/scr3.png)
-    - (:heavy_check_mark:) Створіть файл з іменем `Dockerfile` скопіюйте туди вміс такого ж файлу з цього репозиторію;
-    - (:heavy_check_mark:) Ознайомтесь із коментарями та постарайтесь зрозуміти структуру написання Dockerfile;
-    - (:heavy_check_mark:) Замініть посилання на власний Git репозиторій із Вашим веб-сайтом та закомітьте даний Dockerfile*
-5. (:heavy_check_mark:) Створіть власний репозиторій на Docker Hub. Для цього залогіньтесь у власний аккаунт на [Docker Hub](https://hub.docker.com) після чого перейдіть у вкладку Repositories і далі натисніть кнопку `Create new repository`. Для прикладу мій репозиторій [знаходиться за адресою](https://cloud.docker.com/repository/docker/vkrenta/lab4).
-6. (:heavy_check_mark:) Виконайте білд (build) Docker імеджа та завантажте його до репозиторію. Для цього Ви повинні вказати правильну назву репозиторію та TAG. Оскільки мій репозиторій `bobas/lab4-examples` то команда буде виглядати (де `django` - це тег): 
+    - :heavy_check_mark: Створіть файл з іменем `Dockerfile` скопіюйте туди вміс такого ж файлу з цього репозиторію;
+    - :heavy_check_mark: Ознайомтесь із коментарями та постарайтесь зрозуміти структуру написання Dockerfile;
+    - :heavy_check_mark: Замініть посилання на власний Git репозиторій із Вашим веб-сайтом та закомітьте даний Dockerfile*
+5. :heavy_check_mark: Створіть власний репозиторій на Docker Hub. Для цього залогіньтесь у власний аккаунт на [Docker Hub](https://hub.docker.com) після чого перейдіть у вкладку Repositories і далі натисніть кнопку `Create new repository`. Для прикладу мій репозиторій [знаходиться за адресою](https://cloud.docker.com/repository/docker/vkrenta/lab4).
+6. :heavy_check_mark: Виконайте білд (build) Docker імеджа та завантажте його до репозиторію. Для цього Ви повинні вказати правильну назву репозиторію та TAG. Оскільки мій репозиторій `bobas/lab4-examples` то команда буде виглядати (де `django` - це тег): 
     ```bash
     docker build -t vkrenta/lab4:django .
     docker images
