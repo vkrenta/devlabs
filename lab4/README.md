@@ -35,7 +35,7 @@
     - :heavy_check_mark: при здачі роботи у файлі README вкажіть посилання на Ваш Docker Hub репозиторій та посилання на сказування Вашого імеджа;
 7. :heavy_check_mark: Для запуску веб-сайту потрібно виконати команду (тут я додав додаткові ключі, для чого Вони можете подивиьись у help):
     ```bash
-    docker run -it --name=django --rm -p 8000:8000 bobas/lab4-examples:1
+    docker run -it --name=django --rm -p 8000:8000 vkrenta/lab4:django
     ``` 
     - :heavy_check_mark: перейдіть на аджесу `http://127.0.0.1:8000` та переконайтесь що Ваш веб-сайт працює;
     ![image](images/scr4.png)
