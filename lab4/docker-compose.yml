@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vkrenta/lab4:lab4-app
+    container_name: django
+    ports:
+      - 8000:8000
+  
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile2
+    image: vkrenta/lab4:lab4-test
+    container_name: django2
+    depends_on:
+      - app
+    network_mode: "host"
