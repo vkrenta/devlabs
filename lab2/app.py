@@ -1,7 +1,7 @@
 import requests
-import time
-from datetime import datetime
 import ntplib
+from datetime import datetime
+
 
 def get_time_if_url_not_work():
     c = ntplib.NTPClient()
@@ -12,7 +12,15 @@ def get_time_if_url_not_work():
     return date
 
 
-def check_time(d):
+def main(url=''):
+    if not url:
+        print("No URL passed to function")
+        return False
+    try:
+        r = requests.get(url=url)
+        d = r.json()
+    except:
+        d = get_time_if_url_not_work()
     if "time" in d.keys():
         print("Time is: ", d['time'])
         home_work(d['time'])
@@ -21,40 +29,26 @@ def check_time(d):
     except KeyError:
         print("No date in response!!!")
         raise KeyError
-        
-def main(url=''):
-    if not url:
-        print("No URL passed to function")
-        return False
 
-    try:
-        r = requests.get(url=url)
-    except requests.exceptions.RequestException as e:
-        raise ConnectionError
-
-    if r:
-        check_time(r.json())
-    else:
-        check_time(get_time_if_url_not_work())
     return True
 
 
-def home_work(t):
-    "DateTime Function"
-    
-    if "AM" in t:
+def home_work(m):
+    if "AM" in m:
         print("AM")
-        return "am"
-    elif "PM" in t:
+        return 0
+    elif "PM" in m:
         print("PM")
-        return "pm"
+        return 0
     else:
         print("error")
-        return 0
+        return 1
+    pass
+
 
 if __name__ == "__main__":
     a = "="*40
-    print(a + "\nРезультат без параметрів: \n" + a + "\n")
+    print(a + "\nРезультат без параметрів: ")
     main()
-    print(a + "\nРезультат з правильною URL: \n" + a + "\n")
+    print(a + "\nРезультат з правильною URL: ")
     main('http://date.jsontest.com/')
